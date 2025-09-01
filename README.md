@@ -6,8 +6,12 @@ Autofirma solo inicia con java 11. Para poder hacerlo, hay que hacer sudo altern
 
 Parece que Fedora ha hecho drop java 11
 
-```sudo rpm --import https://packages.adoptium.net/artifactory/api/gpg/key/public```
-```sudo tee /etc/yum.repos.d/adoptium.repo <<EOF```
+```
+sudo rpm --import https://packages.adoptium.net/artifactory/api/gpg/key/public
+```
+```
+sudo tee /etc/yum.repos.d/adoptium.repo <<EOF
+```
 ```
 [Adoptium]
 name=Adoptium
@@ -16,4 +20,6 @@ enabled=1
 gpgcheck=1
 EOF
 ```
-```sudo dnf install temurin-11-jdk``
+```
+sudo dnf install temurin-11-jdk
+```
